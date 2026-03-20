@@ -9,10 +9,8 @@ export const UserStorage = ({ children }) => {
   const [login, setLogin] = React.useState(null);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
-  //Criar rota de navegação
   const navigate = useNavigate();
 
-  //Logout
   const userLogout = React.useCallback(async function () {
     setData(null);
     setError(null);
@@ -21,7 +19,6 @@ export const UserStorage = ({ children }) => {
     window.localStorage.removeItem('token');
   }, []);
 
-  //Obter usuário com token
   async function getUser(token) {
     const { url, options } = USER_GET(token);
     const response = await fetch(url, options);
@@ -30,14 +27,13 @@ export const UserStorage = ({ children }) => {
     setLogin(true);
   }
 
-  //Logar
   async function userLogin(username, password) {
     try {
       setError(null);
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
       const tokenRes = await fetch(url, options);
-      if (!tokenRes.ok) throw new Error('Error: Usuário inválido');
+      if (!tokenRes.ok) throw new Error(`Error: ${tokenRes.statusText}`);
       const { token } = await tokenRes.json();
       window.localStorage.setItem('token', token);
       await getUser(token);
@@ -51,7 +47,6 @@ export const UserStorage = ({ children }) => {
   }
 
   React.useEffect(() => {
-    //Autologin com o token salvo no localStorage
     async function autoLogin() {
       const token = window.localStorage.getItem('token');
       if (token) {
