@@ -11,7 +11,7 @@ const LoginPasswordLost = () => {
   const { data, loading, error, request } = useFetch();
 
   async function handleSubmit(e) {
-    e.prevent.Default();
+    e.preventDefault();
     if (login.validate()) {
       //IMPORTANTE: AO SUBIR, TROCAR URL PARA O ENDEREÇO CORRETO
       const { url, options } = PASSWORD_LOST({
