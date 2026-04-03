@@ -9,7 +9,7 @@
 
 ## 🔗 Links
 
-- **Demo ao vivo:** [https://github.com/alvarenga-codes/dogs-origamid](https://alvarenga-frontend-dogs-origamid.pages.dev/)
+- **Demo ao vivo:** [https://alvarenga-frontend-dogs-origamid.pages.dev/](https://alvarenga-frontend-dogs-origamid.pages.dev/)
 - **Curso:** [Origamid - React Completo](https://www.origamid.com)
 
 ---
