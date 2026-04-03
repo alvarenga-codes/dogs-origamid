@@ -3,7 +3,7 @@
 [![Curso](https://img.shields.io/badge/Curso-Origamid-blue)]()
 [![Status](https://img.shields.io/badge/Status-Concluído-success)]()
 
-
+![Screenshot](./screenshots/login.webp)
 
 > Projeto desenvolvido durante o curso React Completo da Origamid
 
@@ -92,14 +92,17 @@ dogs/
 
 ## 📸 Screenshots
 
-### Home
+### Perfis
 
+![Screenshot](./screenshots/perfis.webp)
 
 ### Login
 
+![Screenshot](./screenshots/login.webp)
 
 ### Comentários
 
+![Screenshot](./screenshots/comentarios.webp)
 
 ---
 
