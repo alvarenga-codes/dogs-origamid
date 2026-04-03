@@ -1,7 +1,7 @@
-# ORIGAMID - JavaScript Completo ES6
+# ORIGAMID - React Completo
 
 [![Curso](https://img.shields.io/badge/Curso-Origamid-blue)]()
-[![Status](https://img.shields.io/badge/Status-Em%20Andamento-yellow)]()
+[![Status](https://img.shields.io/badge/Status-Concluído-success)]()
 
 
 
@@ -9,7 +9,7 @@
 
 ## 🔗 Links
 
-- **Demo ao vivo:** https://github.com/alvarenga-codes/dogs-origamid
+- **Demo ao vivo:** [https://github.com/alvarenga-codes/dogs-origamid](https://alvarenga-frontend-dogs-origamid.pages.dev/)
 - **Curso:** [Origamid - React Completo](https://www.origamid.com)
 
 ---
@@ -63,6 +63,7 @@ O objetivo era praticar e consolidar conhecimentos de React, criando um site pro
 - **CSS Modules**
 - **Fetch API**
 - **Git & GitHub**
+- **Biblioteca externa (Victory)**
 
 
 ---
@@ -72,17 +73,19 @@ O objetivo era praticar e consolidar conhecimentos de React, criando um site pro
 ```
 dogs/
 ├── public/
-│   └── index.html
+│   └── icones
+│   ├── manifest.json
 │
 ├── src/
-│   ├── components/      # Componentes reutilizáveis
-│   ├── pages/           # Páginas da aplicação
-│   ├── hooks/           # Hooks customizados
-│   ├── services/        # Comunicação com API
-│   ├── styles/          # Estilos globais
+│   ├── Assets/          # Ícones, imagens
+│   ├── Components/      # Componentes reutilizáveis
+│   ├── Hooks/           # Hooks customizados
+│   ├── api.js
 │   ├── App.jsx
-│   └── main.jsx
+│   ├── main.jsx
+│   └── UserContext.jsx
 │
+├── index.html
 ├── package.json
 └── README.md
 ```
@@ -92,10 +95,10 @@ dogs/
 ### Home
 
 
-### Faq
+### Login
 
 
-### Modal
+### Comentários
 
 
 ---
@@ -108,7 +111,7 @@ dogs/
 - Hooks customizados
 - Boas práticas de performance
 - Autenticação e proteção de rotas
-- Integração com backend
+- Integração com backend (básico)
 
 ---
 
@@ -116,6 +119,7 @@ dogs/
 
 Este projeto faz parte do curso **React Completo** da Origamid.
 
+[![Certificado](https://img.shields.io/badge/Ver%20Certificado-Origamid-orange)](https://www.origamid.com/certificate/4d5f5e88)
 
 ---
 
